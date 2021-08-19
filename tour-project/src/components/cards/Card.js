@@ -7,7 +7,7 @@ function Card() {
     <div className="card-container">
       {data.map((card) => {
         return (
-          <div className="cards">
+          <div className="cards" key={card.id}>
             <div className="title">
               <h2>{card.title}</h2>
             </div>
